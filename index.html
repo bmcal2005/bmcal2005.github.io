@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link data-react-helmet="true" rel="icon" type="image/png" href="JS.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <title>Janani Sriram</title>
+  
+</head>
+
+<body class="light" id="top">
+  <header class="header center">
+    
+    <h3 style="background: transparent;">
+      <a href="index.html" style="color: var(--clr-primary)">JS</a>
+    </h3>
+    
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#professional_experience">Professional Experience</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#clubs_and_activities">Clubs and Activities</a>
+        </li>
+        
+
+
+
+<!-- add paatu -->
+
+
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#skills">Skills</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      
+    </nav>
+  </header>
+
+  <main>
+    
+    <div class="top_intro">
+    
+      <div class="about class">
+        
+        <h1 style="text-align: center;">Hi, I'm <span class="about__name">Janani</span></h1>
+        <h2 class="about__role">CS @ UC Berkeley</h2>
+        <p class="about__desc">I'm a sophomore deeply interested in healthcare, finance, and public policy. I'm passionate about using software and data to advance affordable healthcare and love to explore new ideas!</p>
+        
+        <div class="about__contact center">
+          <a href="https://docs.google.com/document/d/1FPgkSFC7QQmhT9B3oAX2gY-xXcbj5ynsOCFUrsl41jY/edit#" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a href="https://github.com/jananisriram" target="_blank" aria-label="github" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/janani-sriram/" target="_blank" aria-label="linkedin" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="img">
+        <img src="Janani_Headshot_Center_Square.jpg" alt="headshot" width="400px" height="400px" style="border-radius: 50%;">
+      </div>
+
+
+    </div>
+
+    <section id="projects" class="section projects">
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+
+        <div class="project">
+          <h3>Threads and File Systems</h3>
+          <p class="project__description">
+            Implemented multithreading and file system capabilities for the instructional operating system PintOS
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>MapReduce</h3>
+          <p class="project__description">
+            Wrote a simple version of the MapReduce programming model, an API for fault-tolerant distributed systems
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Rust</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>Numc</h3>
+          <p class="project__description">
+            Wrote and optimized a simple version of the Python library NumPy via multithreading, parallelism, and Intel SIMD instructions
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">OpenMP</li>
+            <li class="project__stack-item">Intel Intrinsics</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        </div>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Gitlet</h3>
+            <p class="project__description">
+              Implemented a version control system emulating Git, including features like branch switching, merge conflict resolutions, and commit resets
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Java</li>
+              <li class="project__stack-item">JUnit</li>
+            </ul>
+            <!--
+            <a href="https://github.com" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            -->
+            <!--
+            <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            -->
+          </div>
+  
+          <div class="project">
+            <h3>SpotSwap</h3>
+            <p class="project__description">
+              Developing a parking spot rental application allowing users to make slots more accessible and inexpensive
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">PostgreSQL</li>
+              <li class="project__stack-item">React.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Flask</li>
+            </ul>
+            <!--
+            <a href="https://github.com" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            -->
+            <!--
+            <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            -->
+          </div>
+        </div>
+
+        <div class="projects__grid">
+
+        <div class="project">
+          <h3>Databases</h3>
+          <p class="project__description">
+            Implemented concurrency, ARIES recovery, joins, and query optimizations
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">SQL</li>
+            <li class="project__stack-item">NoSQL</li>
+            <li class="project__stack-item">MongoDB</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        
+        <div class="project">
+          <h3>RED x Adobe</h3>
+          <p class="project__description">
+            Developed platform to transfer metadata from RED cameras to Adobe cloud platform.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React.js</li>
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">Adobe Cloud</li>
+          </ul>
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.red.com/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>CheRMiT</h3>
+          <p class="project__description">
+            Explored ways to develop and streamline ML and NLP pipeline which mines cheminformatics data from scientific research papers.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Jupyter Hub</li>
+          </ul>
+
+          <a href="https://github.com/igematberkeley/chermit" target="_blank" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+      </div>
+
+      <div class="projects__grid">
+        <div class="project">
+          <h3>Snek</h3>
+          <p class="project__description">
+            Developed snake game using memory allocation and computer architecture techniques.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+          </ul>
+
+          <!-- <a href="https://github.com/jananisriram/gitlet" target="_blank" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a> -->
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        
+        <div class="project">
+          <h3>Gitlet</h3>
+          <p class="project__description">
+            Developed version control software based off the popular system Git.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <a href="https://github.com/jananisriram/gitlet" target="_blank" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>Scheme Interpreter</h3>
+          <p class="project__description">
+            Created a Scheme interpreter using Python.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Scheme</li>
+          </ul>
+
+          <a href="https://github.com/jananisriram/scheme-interpreter" target="_blank" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <!--
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section id="professional_experience" class="section experience">
+      <h2 class="section__title">Professional Experience</h2>
+      <div class="projects__grid">
+        
+        <div class="project">
+          <h3>Databricks</h3>
+          <h6 style="padding-top: 10px;">Software Engineering Intern</h6>
+          <p class="project__description">
+            Spearheading development of internal LLM-powered tools. 
+            The Sales Bot is an end-to-end LLM sales intelligence chatbot leveraging vector stores to enable sales representatives with natural language queries.
+            The Job Description Tool uses a fine-tuned LLM web application to generate high-quality job descriptions, saving hours for people managers.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Ubuntu</li>
+            <li class="project__stack-item">Docker</li>
+            <li class="project__stack-item">Azure</li>
+            <li class="project__stack-item">GCP</li>
+            <li class="project__stack-item">Databricks Delta Live Tables</li>
+            <li class="project__stack-item">FAISS Vector Database</li>
+            <li class="project__stack-item">OpenAI</li>
+            <li class="project__stack-item">Node.js + Express</li>
+            <li class="project__stack-item">React.js</li>
+            <li class="project__stack-item">TypeScript</li>
+            <li class="project__stack-item">Vite (Build Tool)</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        <div class="project">
+          <h3>Berkeley Sky Computing Lab</h3>
+          <h6 style="padding-top: 10px;">Undergraduate Researcher</h6>
+          <p class="project__description">
+            Working with graduate researcher Neil Giridharan on cryptographic applications in distributed systems.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Rust</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+
+        </div>
+        <div class="projects__grid">
+
+        <div class="project">
+          <h3>CS Mentors</h3>
+          <h6 style="padding-top: 10px;">Course Coordinator</h6>
+          <p class="project__description">
+            Planning, managing, and executing course timelines and logistics via mentor recruitment, workshops, and course communication.
+          </p>
+          <h6 style="padding-top: 10px;">Senior Mentor</h6>
+          <p class="project__description">
+            Taught and reviewed critical data structures concepts in CS 61B (Java) with 5 undergraduate students and led pedagogical skills at CSM family meetings (with Junior Mentors).
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>CS Course Staff</h3>
+          
+          <h6 style="padding-top: 10px;">Teaching Assistant (TA)</h6>
+          <p class="project__description">
+            Lead weekly discussions for 30 students, host personal office hours, and manage course logistics and grading schema for 500+ students in CS 186 (Databases).
+          </p>
+
+          <h6 style="padding-top: 10px;">Tutor</h6>
+          <p class="project__description">
+            Led tutoring sessions and office hours for student support, answering student questions on public forum, and grading assignments in CS 61B (Java) and CS 61A (Python).
+          </p>
+
+          <br>
+
+          <h6 style="padding-top: 10px;">Academic Intern</h6>
+          <p class="project__description">
+            Assisted undergraduates with data structures concepts and questions on labs, homework, and projects in CS 61B (Java) and CS 61A (Python).
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">Python</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://cs61a.org/tutors/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+      </div>
+      
+      <div class="projects__grid">
+
+        <div class="project">
+          <h3>Code for Fun</h3>
+          <h6 style="padding-top: 10px;">Instructor</h6>
+          <p class="project__description">
+            Taught programming concepts in Scratch, Python, and HTML to elementary and middle schoolers.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">Java</li>
+            <li class="project__stack-item">JavaScript</li>
+          </ul>
+
+          <!-- <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a href="https://example.com" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a> -->
+        </div>
+
+        <div class="project">
+          <h3>Pine Biotech</h3>
+          <h6 style="padding-top: 10px;">Bioinformatics Intern</h6>
+          <p class="project__description">
+            Investigated host immune responses to SARS-CoV-2 variants, specifically spike protein conformations, with genomic data analysis and machine learning tools.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+            <li class="project__stack-item">R</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://pine-biotech.com/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Stanford Health Care</h3>
+          <h6 style="padding-top: 10px;">Business Intelligence Intern</h6>
+          <p class="project__description">
+            Developed an ML-based description matching algorithm and a streamlined report intake system for Supply Chain's Systems and Analytics team in the Master Data Management division.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">ML</li>
+            <li class="project__stack-item">Tableau</li>
+            <li class="project__stack-item">SQL</li>
+            <li class="project__stack-item">Alteryx</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <!--
+          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+          -->
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section id="clubs_and_activities" class="section experience">
+      <h2 class="section__title">Clubs and Activities</h2>
+      <div class="projects__grid">
+        
+        <div class="project">
+          <h3>UpSync Consulting</h3>
+          <h6 style="padding-top: 10px;">Technical Consultant</h6>
+          <p class="project__description">
+            Develop technological and business solutions for startups, learn critical professional development, networking, and interview strategies.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">C</li>
+            <li class="project__stack-item">React.js</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.upsyncberkeley.com/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        
+        <div class="project">
+          <h3>SAAS Berkeley</h3>
+          <h6 style="padding-top: 10px;">Career Exploration Committee</h6>
+          <p class="project__description">
+            Learn critical data science and machine learning skills in Python (NumPy, Pandas) through workshops and independent projects.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python (NumPy, Pandas)</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://saas.berkeley.edu/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>Berkeley Economic Review</h3>
+          <h6 style="padding-top: 10px;">Web Developer</h6>
+          <p class="project__description">
+            Transition website from Wordpress to Wix with web development team, implement new features to promote user accessibility and interest.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Wix</li>
+            <li class="project__stack-item">Wordpress</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://econreview.berkeley.edu/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>iGEM at Berkeley</h3>
+          <h6 style="padding-top: 10px;">NLP Developer</h6>
+          <p class="project__description">
+            Developing CheRMiT cheminformatics pipeline with high accuracy and low false-positive rate.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Python</li>
+          </ul>
+
+          <!--
+          <a href="https://github.com" aria-label="source code" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          -->
+          <a href="https://www.ocf.berkeley.edu/~igem/" target="_blank" aria-label="live preview" class="link link--icon">
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+
+
+    <section class="section skills" id="skills">
+      
+      <h2 class="section__title">Skills</h2>
+      <ul class="skills__list">
+        <li class="skills__list-item btn btn--plain">Operating Systems and Systems Programming (C, Rust, MapReduce, Threading)</li>
+        <li class="skills__list-item btn btn--plain">Computer Architecture (C, RISC-V Assembly, Intel Intrinsics, OpenMP)</li>
+        <li class="skills__list-item btn btn--plain">Algorithms (Java, Python)</li>
+        <li class="skills__list-item btn btn--plain">Vector Databases (FAISS, Pinecone)</li>
+        <li class="skills__list-item btn btn--plain">Data Structures (Java, Python)</li>
+        <li class="skills__list-item btn btn--plain">Google Cloud Platform (Google Drive API + GoLang)</li>
+        <li class="skills__list-item btn btn--plain">Operating Systems (Ubuntu, Daemons)</li>
+        <li class="skills__list-item btn btn--plain">Machine Learning (Python)</li>
+        <li class="skills__list-item btn btn--plain">Data Analytics (R)</li>
+        <li class="skills__list-item btn btn--plain">Cloud Infrastructure (Azure)</li>
+        <li class="skills__list-item btn btn--plain">Genomics (Python, R)</li>
+        <li class="skills__list-item btn btn--plain">Teaching Pedagogy</li>
+        <li class="skills__list-item btn btn--plain">Full Stack Development (Go, TypeScript, Node.js, Express, React.js, HTML, CSS)</li>
+      </ul>
+      
+    </section>
+    <section class="section contact center" id="contact">
+      <h2 class="section__title">Contact</h2>
+      <a href="mailto:janani.sriram@berkeley.edu">
+        <span class="btn btn--outline" style="margin-left: calc((100% - 113.5px) / 2); margin-right: calc((100% - 113.5px) / 2);">
+          Email me
+        </span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    
+    <a href="/" class="link footer__link">
+      Created By Janani Sriram
+    </a>
+    
+  </footer>
+
+
+  <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
