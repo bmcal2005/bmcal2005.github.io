@@ -36,7 +36,7 @@
     --clr-secondary: #944dd3;
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --shadow-hamburger: rgba(100, 100, 111, 0.2) 0px 29px 29px -29px;
-    background-image: linear-gradient(245deg, #c5bef9 0%, #fcfcfc 74%);
+    background-image: linear-gradient(245deg, #c5bef9 0%, #fcfcfc 54%);
   }
   
   .dark {
