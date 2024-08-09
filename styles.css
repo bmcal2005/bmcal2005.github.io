@@ -32,8 +32,8 @@
     --clr-header: #663b94;
     --clr-fg: #555;
     --clr-fg-alt: #555;
-    --clr-primary: #844da3;
-    --clr-secondary: #944dd3;
+    --clr-primary: #944dd3;
+    --clr-secondary: #844da3;
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     --shadow-hamburger: rgba(100, 100, 111, 0.2) 0px 29px 29px -29px;
     background-image: linear-gradient(245deg, #9d97c8 0%, #fcfcfc 54%);
