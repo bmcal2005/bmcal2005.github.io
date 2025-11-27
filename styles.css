@@ -354,7 +354,7 @@ img {
   margin: 0 auto;
   column-count: 3;
   column-gap: 1em;
-  column-fill: balance;
+  column-fill: auto;
   margin-bottom: 1em;
 }
 
@@ -378,10 +378,11 @@ img {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  width: 100%;
   break-inside: avoid;
-  display: inline-block;
+  -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
+  display: inline-block;
+  width: 100%;
 }
 
 .project:hover {
