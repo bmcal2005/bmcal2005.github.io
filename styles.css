@@ -353,9 +353,10 @@ img {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
-  grid-template-columns: repeat(auto-fit, calc(100% / 3 - 1 * 2 / 3));
-  grid-gap: 1em;
+  flex-wrap: wrap;
+  gap: 1em;
   margin-bottom: 1em;
+  justify-content: center;
 }
 
 /* END PART 9 */
@@ -366,6 +367,11 @@ img {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  flex: 0 1 auto;
+  min-width: 300px;
+  width: fit-content;
+  max-width: 100%;
+  height: fit-content;
 }
 
 .project:hover {
@@ -443,11 +449,16 @@ img {
     max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    flex-basis: 600px;
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, calc(100% / 3 - 1 * 2 / 3));
-    grid-gap: 1em;
+    gap: 1em;
     margin-bottom: 1em;
+    justify-content: center;
+  }
+  
+  .project {
+    min-width: 250px;
+    width: fit-content;
+    max-width: 100%;
   }
 }
 
