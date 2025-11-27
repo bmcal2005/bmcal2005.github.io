@@ -354,6 +354,7 @@ img {
   margin: 0 auto;
   column-count: 3;
   column-gap: 1em;
+  column-fill: balance;
   margin-bottom: 1em;
 }
 
@@ -378,9 +379,9 @@ img {
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   width: 100%;
-  height: fit-content;
   break-inside: avoid;
   display: inline-block;
+  page-break-inside: avoid;
 }
 
 .project:hover {
