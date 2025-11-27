@@ -123,16 +123,20 @@
           -->
         </div>
         <div class="project">
-          <h3>CAD Saab JAS 39 Gripen Fighter Jet</h3>
+          <h3>Dish Detection & Accountability System</h3>
           <p class="project__description">
-          Modeled the Saab JAS 39 Gripen in SolidWorks using advanced surface techniques and iterative design methods like lofts, sketches, mirroring, and split lines. Applied decals and appearances to replicate the aircraft’s profile. Ran a static FEA to simulate wing lift and evaluate structural response.
+          In my free time, my roommate and I built a ceiling-mounted dish-detection system using a Raspberry Pi camera and an edge-ML pipeline. We initially tried YOLOv8, but since it’s CNN-based, it struggled with confidence on small or partially-occluded utensils. We switched to RhiNOv3, a transformer-based model, which gave us far more stable detection in messy, real-world kitchen lighting.
+
+We collected our own dataset from the Pi, dealt with inconsistent lighting, and built a visualization interface to track plate, bowl, cup, and utensil locations over time. We also divided the sink into quadrants, and every night at 10 PM, the system automatically sends a message to our group chat telling us whose quadrant has dishes in it — adding a bit of accountability (and humor) to the apartment.
+
+A silly idea, but genuinely one of the most fun and technically challenging projects I’ve done.
           </p>
           <ul class="project__stack">
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Finite Element Analysis (FEA)</li>
-            <li class="project__stack-item">Computer-Aided Design (CAD)</li>
+            <li class="project__stack-item">Object Detection</li>
+            <li class="project__stack-item">Python (OpenCV, NumPy, ultralytics/Rhino API)</li>
+            <li class="project__stack-item">Linux</li>
           </ul>
-          <a href="https://youtu.be/C-MoekojFSA" target="_blank" aria-label="live preview" class="link link--icon">
+          <a href="https://x.com/diya_gk/status/1989920396251206115" target="_blank" aria-label="live preview" class="link link--icon">
             <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
           </div>
