@@ -62,17 +62,51 @@ const scrollUp = () => {
 
 document.addEventListener('scroll', scrollUp)
 
-// Masonry layout for project grids
+// Smart masonry layout optimizer for project grids
 function initMasonry() {
   const grids = document.querySelectorAll('.projects__grid')
   const rowHeight = 10 // Base row height in pixels
+  const minWideContentLength = 200 // Characters threshold for wide boxes
+  const minWideStackItems = 5 // Stack items threshold for wide boxes
   
   grids.forEach(grid => {
-    const items = grid.querySelectorAll('.project')
+    const items = Array.from(grid.querySelectorAll('.project'))
     
+    // First pass: Determine optimal column span based on content
     items.forEach(item => {
-      // Reset any existing row span
+      // Reset spans
+      item.style.gridColumn = 'span 1'
       item.style.gridRowEnd = 'span 1'
+      
+      // Analyze content
+      const description = item.querySelector('.project__description')
+      const stack = item.querySelector('.project__stack')
+      const descriptionLength = description ? description.textContent.length : 0
+      const stackItemCount = stack ? stack.querySelectorAll('.project__stack-item').length : 0
+      const totalContent = descriptionLength + (stackItemCount * 20) // Rough estimate
+      
+      // Determine if box should be wide (2 columns) or narrow (1 column)
+      // Wide boxes for: long descriptions, many stack items, or overall large content
+      const shouldBeWide = descriptionLength > minWideContentLength || 
+                          stackItemCount >= minWideStackItems ||
+                          totalContent > 350
+      
+      // Set column span
+      if (shouldBeWide) {
+        item.style.gridColumn = 'span 2'
+      } else {
+        item.style.gridColumn = 'span 1'
+      }
+    })
+    
+    // Second pass: Calculate row spans based on actual rendered height
+    items.forEach(item => {
+      // Temporarily set to measure
+      const currentColumnSpan = item.style.gridColumn || 'span 1'
+      item.style.gridColumn = currentColumnSpan
+      
+      // Force a reflow to get accurate height
+      void item.offsetHeight
       
       // Calculate the height of the item
       const itemHeight = item.offsetHeight

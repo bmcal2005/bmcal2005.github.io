@@ -365,11 +365,19 @@ img {
   .projects__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .project {
+    grid-column: span 1 !important; /* Force single column on medium screens */
+  }
 }
 
 @media (max-width: 600px) {
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+  
+  .project {
+    grid-column: span 1 !important; /* Force single column on small screens */
   }
 }
 
@@ -381,8 +389,8 @@ img {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  width: 100%;
   height: fit-content;
+  grid-column: span 1;
 }
 
 .project:hover {
