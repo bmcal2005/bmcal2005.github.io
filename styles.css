@@ -352,11 +352,13 @@ img {
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: min-content;
+  grid-auto-flow: dense;
   gap: 1em;
   margin-bottom: 1em;
-  justify-content: center;
+  align-items: start;
 }
 
 /* END PART 9 */
@@ -367,10 +369,7 @@ img {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  flex: 0 1 auto;
-  min-width: 300px;
-  width: fit-content;
-  max-width: 100%;
+  width: 100%;
   height: fit-content;
 }
 
@@ -448,17 +447,13 @@ img {
   .projects__grid {
     max-width: 1100px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: min-content;
+    grid-auto-flow: dense;
     gap: 1em;
     margin-bottom: 1em;
-    justify-content: center;
-  }
-  
-  .project {
-    min-width: 250px;
-    width: fit-content;
-    max-width: 100%;
+    align-items: start;
   }
 }
 
