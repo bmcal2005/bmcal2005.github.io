@@ -29,23 +29,23 @@ body {
 .light {
   --clr-bg: #fcfcfc;
   --clr-bg-alt: #fff;
-  --clr-header: #c29fd6;
+  --clr-header: #a90fc4;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #9344c1;
-  --clr-secondary: #c29fd6;
+  --clr-primary: #e19ced;
+  --clr-secondary: #a90fc4;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --shadow-hamburger: rgba(100, 100, 111, 0.2) 0px 29px 29px -29px;
-  background-image: linear-gradient(245deg, #844da3 0%, #ffffff 74%);
+  background-image: linear-gradient(245deg, #e19ced 0%, #ffd9d9 74%);
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-header: #013457;
+  --clr-bg: #08185f;
+  --clr-bg-alt: #142caf;
+  --clr-header: #0e0e71;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #9344c1;
+  --clr-primary: #e19ced;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   --shadow-hamburger: rgba(0, 0, 0, 0.16) 0px 36px 36px -36px,
@@ -352,40 +352,20 @@ img {
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 356px);
-  grid-auto-rows: min-content;
-  grid-auto-flow: row dense;
-  gap: 1em;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, calc(100% / 3 - 1 * 2 / 3));
+  grid-gap: 1em;
   margin-bottom: 1em;
-  justify-content: center;
-}
-
-@media (max-width: 900px) {
-  .projects__grid {
-    grid-template-columns: repeat(2, 356px);
-    max-width: 728px; /* 356px * 2 + 16px gap = 728px */
-  }
-}
-
-@media (max-width: 600px) {
-  .projects__grid {
-    grid-template-columns: 356px;
-    max-width: 356px;
-  }
 }
 
 /* END PART 9 */
 
 .project {
   padding: 2em;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  width: 100%;
-  height: fit-content;
-  grid-column: span 1;
 }
 
 .project:hover {
@@ -458,6 +438,18 @@ img {
   transition: transform 0.2s ease-in-out;
 }
 
+@media (max-width: 820px) {
+  .projects__grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-basis: 600px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, calc(100% / 3 - 1 * 2 / 3));
+    grid-gap: 1em;
+    margin-bottom: 1em;
+  }
+}
 
 @media (max-width: 850px) {
   .header {
