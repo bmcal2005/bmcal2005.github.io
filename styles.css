@@ -354,8 +354,10 @@ img {
   margin: 0 auto;
   column-count: 3;
   column-gap: 1em;
-  column-fill: balance;
+  column-fill: auto;
   margin-bottom: 1em;
+  orphans: 1;
+  widows: 1;
 }
 
 @media (max-width: 900px) {
@@ -384,6 +386,7 @@ img {
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .project:hover {
