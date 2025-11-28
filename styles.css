@@ -352,23 +352,26 @@ img {
 .projects__grid {
   max-width: 1100px;
   margin: 0 auto;
-  column-count: 3;
-  column-gap: 1em;
-  column-fill: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 356px);
+  grid-auto-rows: min-content;
+  grid-auto-flow: row dense;
+  gap: 1em;
   margin-bottom: 1em;
-  orphans: 1;
-  widows: 1;
+  justify-content: center;
 }
 
 @media (max-width: 900px) {
   .projects__grid {
-    column-count: 2;
+    grid-template-columns: repeat(2, 356px);
+    max-width: 728px; /* 356px * 2 + 16px gap = 728px */
   }
 }
 
 @media (max-width: 600px) {
   .projects__grid {
-    column-count: 1;
+    grid-template-columns: 356px;
+    max-width: 356px;
   }
 }
 
@@ -376,17 +379,13 @@ img {
 
 .project {
   padding: 2em;
-  margin: 0 0 1em 0;
+  margin: 0;
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  display: inline-block;
   width: 100%;
-  box-sizing: border-box;
-  vertical-align: top;
+  height: fit-content;
+  grid-column: span 1;
 }
 
 .project:hover {
