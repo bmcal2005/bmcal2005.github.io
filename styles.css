@@ -36,15 +36,15 @@ body {
   --clr-secondary: #a90fc4;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   --shadow-hamburger: rgba(100, 100, 111, 0.2) 0px 29px 29px -29px;
-  background-image: linear-gradient(245deg, #e19ced 0%, #ffd9d9 74%);
+  background-image: linear-gradient(245deg, #e19ced 0%, #ffffff 74%);
 }
 
 .dark {
   --clr-bg: #08185f;
   --clr-bg-alt: #142caf;
   --clr-header: #0e0e71;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
+  --clr-fg: #7c7cad;
+  --clr-fg-alt: #7c7cad;
   --clr-primary: #e19ced;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
