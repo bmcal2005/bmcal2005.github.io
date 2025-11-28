@@ -390,7 +390,6 @@ img {
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
   height: fit-content;
-  grid-column: span 1;
 }
 
 .project:hover {

@@ -72,26 +72,26 @@ function initMasonry() {
   grids.forEach(grid => {
     const items = Array.from(grid.querySelectorAll('.project'))
     
-    // First pass: Determine optimal column span based on content
+    // Reset all items first
     items.forEach(item => {
-      // Reset spans
-      item.style.gridColumn = 'span 1'
-      item.style.gridRowEnd = 'span 1'
-      
-      // Analyze content
+      item.style.gridColumn = ''
+      item.style.gridRow = ''
+      item.style.gridRowEnd = ''
+    })
+    
+    // First pass: Set column spans based on content analysis
+    items.forEach(item => {
       const description = item.querySelector('.project__description')
       const stack = item.querySelector('.project__stack')
-      const descriptionLength = description ? description.textContent.length : 0
+      const descriptionLength = description ? description.textContent.trim().length : 0
       const stackItemCount = stack ? stack.querySelectorAll('.project__stack-item').length : 0
-      const totalContent = descriptionLength + (stackItemCount * 20) // Rough estimate
+      const totalContent = descriptionLength + (stackItemCount * 20)
       
       // Determine if box should be wide (2 columns) or narrow (1 column)
-      // Wide boxes for: long descriptions, many stack items, or overall large content
       const shouldBeWide = descriptionLength > minWideContentLength || 
                           stackItemCount >= minWideStackItems ||
                           totalContent > 350
       
-      // Set column span
       if (shouldBeWide) {
         item.style.gridColumn = 'span 2'
       } else {
@@ -99,29 +99,34 @@ function initMasonry() {
       }
     })
     
-    // Second pass: Calculate row spans based on actual rendered height
+    // Force reflow
+    void grid.offsetHeight
+    
+    // Second pass: Calculate and set row spans based on actual height
     items.forEach(item => {
-      // Temporarily set to measure
-      const currentColumnSpan = item.style.gridColumn || 'span 1'
-      item.style.gridColumn = currentColumnSpan
-      
-      // Force a reflow to get accurate height
-      void item.offsetHeight
-      
-      // Calculate the height of the item
       const itemHeight = item.offsetHeight
-      
-      // Calculate how many rows this item should span
-      const rowSpan = Math.ceil((itemHeight + 16) / rowHeight) // +16 for gap
-      
-      // Set the row span
+      const gap = 16 // 1em gap
+      const rowSpan = Math.max(1, Math.ceil((itemHeight + gap) / rowHeight))
       item.style.gridRowEnd = `span ${rowSpan}`
     })
   })
 }
 
-// Initialize masonry on page load
-window.addEventListener('load', initMasonry)
+// Initialize masonry - try multiple times to ensure it works
+function runMasonry() {
+  initMasonry()
+  // Run again after a short delay to catch any late-loading content
+  setTimeout(initMasonry, 100)
+}
+
+// Initialize on DOM ready and on load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', runMasonry)
+} else {
+  runMasonry()
+}
+
+window.addEventListener('load', runMasonry)
 
 // Recalculate on window resize
 let resizeTimer
