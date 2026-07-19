@@ -1,811 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio" />
-  <link data-react-helmet="true" rel="icon" type="image/png" href="BMimage.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/fa62c117c7.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="styles.css">
-  <title>Bhavya Mamnani</title>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vanessa Wu</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body class="light" id="top">
-  <header class="header center">
-    
-    <h3 style="background: transparent;">
-      <a href="index.html" style="color: var(--clr-primary)">BM</a>
-    </h3>
-    
-    <nav class="nav center">
-      <ul class="nav__list center">
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#projects">Projects</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#professional_experience">Professional Experience</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#clubs_and_activities">Clubs and Activities</a>
-        </li>
-        
-
-
-
-<!-- add paatu -->
-
-
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#skills">Skills</a>
-        </li>
-        <li class="nav__list-item">
-          <a class="link link--nav" href="#contact">Contact</a>
-        </li>
-      </ul>
-
-      
-
-      <button type="button" aria-label="toggle theme" class="btn btn--icon">
-        <i id="btn-theme" class="fas fa-moon"></i>
-      </button>
-
-      <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
-
-      
-    </nav>
-  </header>
-
-  <main>
-    
-    <div class="top_intro">
-    
-      <div class="about class">
-        
-        <h1 style="text-align: center;">Hi, I'm <span class="about__name">Bhavya</span></h1>
-        <h2 class="about__role">Mechanical Engineering @ UC Berkeley</h2>
-        <p class="about__desc">I'm deeply interested in the intersection of mechanical systems, embedded intelligence, and real-world impact. My interests span applied renewable energy, spacecraft and aircraft propulsion, safety-critical design, and sensor-driven autonomy. I am eager, determined, and hardworking, and when I put my mind to accomplishing something I put everything I have into it until I do.</p>
-        
-        <div class="about__contact center">
-          <a href="-" target="_blank">
-            <span class="btn btn--outline">Resume</span>
-          </a>
-        
-          <a href="https://github.com/bmcal2005" target="_blank" aria-label="github" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/bhavya-mamnani-212a79233/" target="_blank" aria-label="linkedin" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="img">
-        <img src="bhavya_mamnani_headshot.jfif" alt="headshot" width="400px" height="400px" style="border-radius: 50%;">
-      </div>
-
-
-    </div>
-
-    <section id="projects" class="section projects">
-      <h2 class="section__title">Projects</h2>
-      <div class="projects__grid">
-        <div class="project">
-          <h3>CAD Saab JAS 39 Gripen Fighter Jet</h3>
-          <p class="project__description">
-          Modeled the Saab JAS 39 Gripen in SolidWorks using advanced surface techniques and iterative design methods like lofts, sketches, mirroring, and split lines. Applied decals and appearances to replicate the aircraft’s profile. Ran a static FEA to simulate wing lift and evaluate structural response.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Finite Element Analysis (FEA)</li>
-            <li class="project__stack-item">Computer-Aided Design (CAD)</li>
-          </ul>
-          <a href="https://youtu.be/C-MoekojFSA" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-        <div class="project">
-          <h3>Dish Detection & Accountability System</h3>
-          <p class="project__description">
-          In my free time, my roommate and I built a ceiling‑mounted dish‑detection system using a Raspberry Pi camera and an edge ML pipeline. YOLOv8 struggled with small, occluded utensils, so we switched to RhiNOv3, which handled messy kitchen lighting much better. We collected our own dataset, built a visualization interface to track dishes over time, and even divided the sink into quadrants, every night at 10 PM the system messages our group chat with whose dishes are left. It started as a silly idea, but it turned into one of the most fun and technically challenging projects I’ve worked on.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Object Detection</li>
-            <li class="project__stack-item">Python (OpenCV, NumPy, ultralytics/Rhino API)</li>
-            <li class="project__stack-item">Linux</li>
-          </ul>
-          <a href="https://x.com/diya_gk/status/1989920396251206115" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
+  <!-- HOME -->
+  <section id="home" class="view active">
+    <div class="home-wrap">
+      <div class="home-copy">
+        <span class="eyebrow">hello there</span>
+        <h1>BHAVYA MAMNANI</h1>
+        <p>Hello! I'm currently a third year student at UC Berkeley studying Mechanical Engineering and Math.</p>
+        <p>I'm driven by my passion for project-based solutions in automotive
+            systems, robotics, electronics, and advanced materials research.</p>
+        <div class="home-actions">
+          <a class="cta" href="#technical" data-target="technical">see my projects!!</a>
+          <div class="icon-links">
+            <a class="icon-button" href="https://www.linkedin.com/in/bhavya-mamnani-212a79233/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.98 3.5C4.98 4.6 4.14 5.5 3.08 5.5 2.03 5.5 1.18 4.6 1.18 3.5 1.18 2.38 2.03 1.5 3.08 1.5 4.14 1.5 4.98 2.38 4.98 3.5zM.5 8.75h5v14.5h-5V8.75zm7.62 0h4.78v2h.07c.67-1.27 2.3-2.62 4.73-2.62 5.06 0 6 3.34 6 7.68v8.44h-5V15.8c0-2.42-.05-5.53-3.36-5.53-3.37 0-3.89 2.63-3.89 5.35v8.83h-5V8.75z"/></svg>
+            </a>
+            <a class="icon-button" href="mailto:bhavya_mamnani@berkeley.edu" aria-label="Email">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4.23l-8 5.2-8-5.2V6l8 5.2L20 6v2.23z"/></svg>
+            </a>
           </div>
-        <div class="project">
-          <h3>Solar Activity Monitoring with a Raspberry Pi Camera System</h3>
-          <p class="project__description">
-          Assembled an RPI camera to attach to a Coronado telescope to observe the sun’s chromosphere. Project made for NASA California Space Grant Consortium program.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-          </ul>
-          <a href="https://docs.google.com/document/d/13qgBIJpR10oafnLsiAwr92GjlDKqwWygl8Ry-Qup3lo/edit?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="project">
-          <h3>Florida State University</h3>
-          <h6 style="padding-top: 10px;">Student Intern</h6>
-          <p class="project__description">
-            Learn + perform mathematical MATLAB data analysis + coding tasks for development of dynamics of internal waves in the ocean (specifically the Loop Current at the Yucatan Channel) under Dr. Hiron + Dr. Raja. Delivered culminating presentation to the COAPS (Center for Ocean-Atmospheric Prediction Studies (COAPS) faculty in May 2024.
-          </p>
-        
-        <ul class="project__stack">
-          <li class="project__stack-item">MATLAB</li>
+  <!-- TECHNICAL -->
+  <section id="technical" class="view">
+    <aside class="sidebar">
+      <a class="logo" href="#" data-target="home">BHAVYA MAMNANI</a>
+      <a class="contact-link" href="#" data-target="home">contact me!</a>
+      <nav>
+        <ul>
+          <li><a class="current" href="#" data-target="technical">technical</a></li>
         </ul>
-        <a href="https://lists.fsu.edu/pipermail/eoas-seminar/2024-May.txt" target="_blank" aria-label="live preview" class="link link--icon">
-          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-        </a>
-        
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-          
-        <div class="project">
-          <h3>3D Printed Wind Turbine Design and Testing</h3>
-          <h6 style="padding-top: 10px;">Associated with UC Berkeley</h6>
-          <p class="project__description">
-            Designed and tested a 3D-printed wind turbine to optimize power output, structural stability, and weight efficiency. Developed a rotor blade and generator housing within strict design constraints, achieving a peak power output of 0.8041 W and a tower stiffness of 18.0 N/m (evaluated through linear regression analysis of applied load vs. displacement). Applied iterative CAD modeling and performance testing, ensuring compliance with project guidelines while refining key engineering metrics.          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Finite Element Analysis (FEA)</li>
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Data Analysis</li>
-            <li class="project__stack-item">3D Printing</li>
-          </ul>
-          <a href="https://drive.google.com/file/d/1xIaKvltq2axn7u5EkEYrY-Z6y-OBvauR/view?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        
-        </div>
-        </div>
+      </nav>
+    </aside>
+    <div class="content">
+      <div class="content-inner">
+        <h1 class="page-title">technical</h1>
 
-        <div class="projects__grid">
-          <div class="project">
-            <h3>Night Phone Holder – Adjustable Rotating Stand</h3>
-            <h6 style="padding-top: 10px;">Associated with UC Berkeley</h6>
-            <p class="project__description">
-              Developed a phone clamp system with upper and lower jaws, dual railings, and adjustable arms for a secure fit. Engineered ball and socket joints for rotational flexibility, incorporating knurled surfaces and sticky coatings to enhance grip. Manufactured components using resin for durability and flexibility, preventing breakage compared to PLA alternatives. Designed a base clamp with interference fit, ensuring stability on various surfaces. Drafted fully dimensioned detail and assembly drawings with Geometric Dimensioning & Tolerancing (GD&T), applying tolerances using ANSI B4.1 Standard Limits and Fits to ensure intended function. Conducted performance testing, refining the design for ease of use and accessibility.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">GD&T</li>
-              <li class="project__stack-item">Design for Manufacturing</li>
-              <li class="project__stack-item">Manufacturing Process Improvement</li>
-              <li class="project__stack-item">3D Prototyping</li>
-              <li class="project__stack-item">Computer-Aided Design (CAD)</li>
-              <li class="project__stack-item">Machining</li>
-              <li class="project__stack-item">Working Drawings</li>
-            </ul>
-          
-            
-            <a href="https://drive.google.com/file/d/18g-RJr7dawmVtAkXSUK9I5jeQcOCzHgZ/view?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-            
-            <!--
-            <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            -->
-          
-          </div>
-  
-          <div class="project">
-            <h3>MATLAB Asymmetrical Bending Analysis Tool</h3>
-            <h6 style="padding-top: 10px;">Associated with UC Berkeley</h6>
-            <p class="project__description">
-              Developed a MATLAB suite to model stress distributions in femur cross-sections under asymmetrical bending with and without implants. Computed stress distributions, neutral axis orientation, and centroid locations using BMD-weighted Young’s modulus maps derived from medical image data. Evaluated stress normalization metrics and visualized results via custom contour plots.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Mechanical Engineering</li>
-              <li class="project__stack-item">MATLAB</li>
-              <li class="project__stack-item">Solid Mechanics</li>
-            </ul>
-          
-            <!--
-            <a href="https://github.com" aria-label="source code" class="link link--icon">
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            -->
-            <!--
-            <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-            -->
-          </div>
-          
-        </div>
 
-        <div class="projects__grid">
-
-        <div class="project">
-          <h3>Berkeley Sensor & Actuator Center</h3>
-          <h6 style="padding-top: 10px;">Student Researcher</h6>
-          <p class="project__description">
-            Designing gadgets to use in nanolab.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Computer-Aided Design (CAD)</li>
-            <li class="project__stack-item">3D Prototyping</li>
-            <li class="project__stack-item">Machining</li>
-          </ul>
-        
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.red.com/" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        <!---
+      <div class="project">
+        <h2>Gen IX Occupant Cell Design</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; UC Berkeley Solar Vehicle Team</div>
+        <div class="desc">
+          <p>Designed a carbon fiber composite occupant cell utilizing varied core materials to optimize stiffness-to-weight ratio and crash safety. Led the development of CAD models to ensure structural integration with surrounding subsystems, including load-bearing interfaces for the array tilting mechanism. Created simulation models in ANSYS Mechanical and ANSYS ACP, defining boundary conditions, load cases, and laminate layups to evaluate structural integrity under expected service loads.</p>
         </div>
-        
-        <div class="project">
-          <h3>RED x Adobe</h3>
-          <p class="project__description">
-            Developed platform to transfer metadata from RED cameras to Adobe cloud platform.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">React.js</li>
-            <li class="project__stack-item">C</li>
-            <li class="project__stack-item">Adobe Cloud</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!----
-          <a href="https://www.red.com/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        
+        <div class="shots">
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
         </div>
-      -->
-        <!---
-
-        <div class="project">
-          <h3>CheRMiT</h3>
-          <p class="project__description">
-            Explored ways to develop and streamline ML and NLP pipeline which mines cheminformatics data from scientific research papers.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Jupyter Hub</li>
-          </ul>
-
-          <a href="https://github.com/igematberkeley/chermit" target="_blank" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-        -->
-          <!--
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-      <!--
+        <div class="tools">SolidWorks, Ansys Mechanical, Ansys ACP, Composites</div>
       </div>
 
-      <div class="projects__grid">
-        <div class="project">
-          <h3>Snek</h3>
-          <p class="project__description">
-            Developed snake game using memory allocation and computer architecture techniques.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">C</li>
-          </ul>
-        -->
-          <!-- <a href="https://github.com/bmcal2005
-           m/gitlet" target="_blank" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a> -->
-          <!--
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
+      <div class="project">
+        <h2>Tensile Evaluation of 3D-Printed Filaments at Varying Print Speeds</h2>
+        <div class="meta">2026 &nbsp;|&nbsp; ME103 Experimentation and Measurements</div>
+        <div class="desc">
+          <p>Designed and executed a full factorial experiment investigating how FDM print speed affects the tensile behavior of three common 3D printing filaments: PLA, PETG, and ASA. Fabricated 60 ASTM D638 dog bone specimens across 15 treatment combinations using a Bambu P1S printer, varying speed from 50 to 800 mm/s. Performed dimensional verification on all 60 specimens with digital calipers and stored them in airtight containers to minimize moisture absorption.</p>
+          <p>Conducted uniaxial tensile testing on a 20 lbf Instron 5500, calibrating the load cell against five known static loads and deriving a linear correction function. Converted force-displacement outputs into stress-strain curves in MATLAB, using individually measured cross-sectional areas per specimen, and performed full uncertainty propagation using root-sum-square methods.</p>
+          <p>Statistical analysis at a 5% significance level showed material choice was the dominant factor controlling both UTS and ductility, while print speed alone produced no statistically significant main effect. The material-speed interaction was significant, with PLA showing a clear decrease in ductility at higher speeds.</p>
         </div>
-        <!--
-        <div class="project">
-          <h3>Gitlet</h3>
-          <p class="project__description">
-            Developed version control software based off the popular system Git.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Java</li>
-          </ul>
-
-          <a href="https://github.com/jananisriram/gitlet" target="_blank" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-        -->
-          <!--
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-        <!---
-
-        <div class="project">
-          <h3>Scheme Interpreter</h3>
-          <p class="project__description">
-            Created a Scheme interpreter using Python.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Scheme</li>
-          </ul>
-
-          <a href="https://github.com/jananisriram/scheme-interpreter" target="_blank" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-        -->
-          <!--
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-        
+        <div class="tools">Material Testing, Additive Manufacturing, Data Analysis</div>
       </div>
-    </section>
 
-
-    <section id="professional_experience" class="section experience">
-      <h2 class="section__title">Professional Experience</h2>
-      <div class="projects__grid">
-        <div class="project">
-          <h3>Pacific Northwest National Laboratory (PNNL)</h3>
-          <h6 style="padding-top: 10px;">Applied Engineering and Research Intern</h6>
-          <p class="project__description">
-            Conducted probabilistic risk assessments using advanced statistical modeling to evaluate system vulnerabilities in critical infrastructure. Assisted in research on risk-informed decision-making frameworks, contributing to reports used by industry stakeholders. Synthesized technical findings into clear, structured insights for internal team and external partners. Collaborated with researchers on national security and energy resilience projects, developing a deeper understanding of regulatory challenges in high-risk sectors.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Fault Tree Analysis</li>
-            <li class="project__stack-item">Hydrogen Storage</li>
-            <li class="project__stack-item">Reliability Analysis</li>
-            <li class="project__stack-item">Probabilistic Risk Assessment (PRA)</li>
-          </ul>
-          <a href="https://www.osti.gov/biblio/2586806" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          </div>  
-        <div class="project">
-          <h3>Six Sigma Microelectronics</h3>
-          <h6 style="padding-top: 10px;">Automation Engineering Intern</h6>
-          <p class="project__description">
-            Automating processes for semiconductor manufacturing.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Electromechanical Design</li>
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Computer-Aided Design (CAD)</li>
-            <li class="project__stack-item">Mechanism Design</li>
-          </ul>
-          </div>  
-        <div class="project">
-          <h3>American River College Math Learning Center</h3>
-          <h6 style="padding-top: 10px;">Student Tutor</h6>
-          <p class="project__description">
-            Tutored college students in mastery-based math (Math 300, Math 333), collaborated with faculty for diverse learners, achieved 25% grade increase.
-          </p>
-          <!--
-          <ul class="project__stack">
-            <li class="project__stack-item">Ubuntu</li>
-            <li class="project__stack-item">Docker</li>
-            <li class="project__stack-item">Azure</li>
-            <li class="project__stack-item">GCP</li>
-            <li class="project__stack-item">Databricks Delta Live Tables</li>
-            <li class="project__stack-item">FAISS Vector Database</li>
-            <li class="project__stack-item">OpenAI</li>
-            <li class="project__stack-item">Node.js + Express</li>
-            <li class="project__stack-item">React.js</li>
-            <li class="project__stack-item">TypeScript</li>
-            <li class="project__stack-item">Vite (Build Tool)</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <br> </br>
-          <a href="https://arc.losrios.edu/student-resources/math-learning-center" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          
+      <div class="project">
+        <h2>Composite Toed Shoe Covers</h2>
+        <div class="meta">2026 &nbsp;|&nbsp; ME127 Introduction to Composite Materials</div>
+        <div class="desc">
+          <p>Designed a 3D-printed composite sandwich toe cover as a lightweight alternative to steel-toe boots, targeting ASTM F2413-18 compliance (2,500 lbf compression). Modeled three core geometries — square, honeycomb, and corrugated — in SolidWorks, all constrained to a constant thickness. Researched and compared TPU 95A, TPE, and PA-CF filaments across stiffness, yield strength, and cost, finding the TPU 95A / PA-CF sandwich substantially cheaper than steel at a fraction of the weight.</p>
+          <p>Ran ANSYS static structural simulations evaluating deformation and factor of safety, with the corrugated TPU 95A – PA-CF design achieving the highest FOS of 4.39. Also used ANSYS ACP to model fiber orientation effects on a traditional carbon fiber / aluminum honeycomb wet layup baseline.</p>
         </div>
-
-        <div class="project">
-          <h3>University of Washington</h3>
-          <h6 style="padding-top: 10px;">Student Intern @ Sauro Lab</h6>
-          <p class="project__description">
-            Developed and implemented Python scripts to extract and process coordinates from Escher metabolic models, storing data in CSV format with categorization of metabolites and reactions. Leveraged this data to generate various formats, including SVG, GraphML, and SBML, contributing to the preparation of a preprint for community dissemination. Work conducted under guidance from Dr. Herbert Sauro in the Sauro Lab.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-          </ul>
-
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
+        <div class="shots">
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
         </div>
-
-        </div>
-        <div class="projects__grid">
-
-        <div class="project">
-          <h3>UC Davis ACRES Lab</h3>
-          <h6 style="padding-top: 10px;">Research Intern</h6>
-          <p class="project__description">
-            Assisting in research regarding sustainable materials for industrial use; mycelium research at UC Davis - Advanced Composites Research Engineering & Science (ACRES) Laboratory. Verified antimicrobial properties of balsa wood to explore its compatibility with Reishi mycelium (G. lucidum) as a bio-degradable substitute for conventional plywood and particle boards for ACRES' mycelium-based wind turbines. Working under Professor La Saponara.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">3D Printing</li>
-          </ul>
-          <!--
-          <h6 style="padding-top: 10px;">Senior Mentor</h6>
-          <p class="project__description">
-            Taught and reviewed critical data structures concepts in CS 61B (Java) with 5 undergraduate students and led pedagogical skills at CSM family meetings (with Junior Mentors).
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Java</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          
-          <a href="https://faculty.engineering.ucdavis.edu/lasaponara/research/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>Reteena</h3>
-          
-          <h6 style="padding-top: 10px;">Co-Founder</h6>
-          <p class="project__description">
-            Co-Founder of Reteena, a verified 503(c)(3) research nonprofit under a fiscal sponsorship from Hack Club. We aim to reduce healthcare diagnosis costs by utilizing AI models. Currently working on using AI models to inference for Alzheimer's using low-resolution MRI scans. 
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">TensorFlow</li>
-            <li class="project__stack-item">Python</li>
-          </ul>
-           <a href="https://www.reteena.org/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          <!--
-          <h6 style="padding-top: 10px;">Tutor</h6>
-          <p class="project__description">
-            Led tutoring sessions and office hours for student support, answering student questions on public forum, and grading assignments in CS 61B (Java) and CS 61A (Python).
-          </p>
-
-          <br>
-
-          <h6 style="padding-top: 10px;">Academic Intern</h6>
-          <p class="project__description">
-            Assisted undergraduates with data structures concepts and questions on labs, homework, and projects in CS 61B (Java) and CS 61A (Python).
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">Python</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!---
-          <a href="https://cs61a.org/tutors/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      -->
+        <div class="tools">SolidWorks, Ansys Mechanical, Ansys ACP, Composites</div>
       </div>
-      
-      <div class="projects__grid">
-        <!--
-        <div class="project">
-          <h3>Beats by Dre</h3>
-          <h6 style="padding-top: 10px;">Consumer Insights Data Analytics Extern</h6>
-          <p class="project__description">
-            Conducted consumer trends research, focusing on audio industry and GenZ behaviors, identifying driving factors. Executed end-to-end consumer research; from scoping to data analysis and participant engagement.
-          </p>
-        -->
-          <!--
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">Java</li>
-            <li class="project__stack-item">JavaScript</li>
-          </ul>
-        -->
-          <!-- <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          <a href="https://example.com" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a> -->
+
+      <div class="project">
+        <h2>Automated Matcha Maker Attachment</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; ME110 Product Design</div>
+        <div class="desc">
+          <p>Developed in a product design course, this project focused on streamlining the process of making matcha through an attachment designed for reusable bottles. The device integrates a spring-loaded dispensing mechanism for powdered matcha and a DC motor-driven whisking system, enabling near-autonomous preparation. The team went through several design iterations informed by user feedback, balancing functionality with convenience.</p>
+          <p>Using Onshape, modeled the system with appropriate tolerancing for manufacturability and produced a working prototype via 3D printing. Conducted FEA and CFD simulations to validate performance, ensuring smooth powder release and reliable operation.</p>
         </div>
-        <!--
-        <div class="project">
-          <h3>Pine Biotech</h3>
-          <h6 style="padding-top: 10px;">Bioinformatics Intern</h6>
-          <p class="project__description">
-            Investigated host immune responses to SARS-CoV-2 variants, specifically spike protein conformations, with genomic data analysis and machine learning tools.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-            <li class="project__stack-item">R</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!---
-          <a href="https://pine-biotech.com/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      -->
-        <!--
-        <div class="project">
-          <h3>Stanford Health Care</h3>
-          <h6 style="padding-top: 10px;">Business Intelligence Intern</h6>
-          <p class="project__description">
-            Developed an ML-based description matching algorithm and a streamlined report intake system for Supply Chain's Systems and Analytics team in the Master Data Management division.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">ML</li>
-            <li class="project__stack-item">Tableau</li>
-            <li class="project__stack-item">SQL</li>
-            <li class="project__stack-item">Alteryx</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://csmentors.berkeley.edu/#/bios/cs61b" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          -->
-        </div>
-        
+        <div class="tools">OnShape, Prototyping, Circuits, 3D Printing</div>
+        <div class="role">Group Project</div>
       </div>
-    </section>
 
-
-    <section id="clubs_and_activities" class="section experience">
-      <h2 class="section__title">Clubs and Activities</h2>
-      <div class="projects__grid">
-        
-        <div class="project">
-          <h3>Hydrogen Grand Prix Racing Hydrogen Team</h3>
-          <h6 style="padding-top: 10px;">Co-Captain</h6>
-          <p class="project__description">
-            Designed, engineered, and raced remote-controlled fuel cell electric vehicles powered by hydrogen.
-          </p>
-          <!--
-          <ul class="project__stack">
-            <li class="project__stack-item">C</li>
-            <li class="project__stack-item">React.js</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <br> <br>
-          <a href="https://docs.google.com/document/d/1XLY_9vgoszg9rocjaU3BPsBIiSkMybs4NrwWBf_KhIA/edit?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
+      <div class="project">
+        <h2>Roll Cage Optimization</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; Formula Sun Grand Prix Altair Challenge</div>
+        <div class="desc">
+          <p>Participated in a 3D CAD competition focused on structural optimization and design for manufacturability. Tasked with designing a roll cage for a pre-defined occupant cell, applied topology optimization techniques to reduce weight while maintaining structural integrity. To ensure material consistency across all submissions, Steel 304 was mandated, requiring that all optimization be achieved purely through geometric refinement. The design balanced manufacturability with performance by incorporating FEA-driven iteration, minimizing mass without compromising safety or stiffness.</p>
         </div>
-        
-        <div class="project">
-          <h3>Space Technologies At California (STAC)</h3>
-          <h6 style="padding-top: 10px;">LEAPFROG - Mechanical Engineer</h6>
-          <p class="project__description">
-            As a member of Space Technologies at California, I led the development of a custom testing rig for our hopper system. The compression phase of the hopper is constrained by the bending strength of carbon fiber rods, allowing a maximum vertical contraction of 40% before risking fracture. Each carbon fiber rod experiences approximately 10N of force in a short burst, generating a high impulse that enables substantial propulsion despite the hopper’s small size. I also assisted in refining the compression-based jumping mechanism, utilizing carbon fiber rods to achieve a projected jump height of 14 meters on the moon.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Design for Manufacturing</li>
-            <li class="project__stack-item">Fused Deposition Modeling (FDM)</li>
-          </ul>
-        
-          <a href="https://drive.google.com/file/d/1AaI-mzKsbsx_XjGtXbdEo6zpiK_7J69b/view?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          
+        <div class="shots">
+          <div class="shot">Final roll cage CAD</div>
+          <div class="shot">Topology optimization</div>
+          <div class="shot">Team photo</div>
+          <div class="shot">Loading case simulation</div>
+          <div class="shot">Boundary condition detail</div>
+          <div class="shot">Deformation simulation</div>
+          <div class="shot">Final occupant cell CAD</div>
+          <div class="shot">Waterjetted joint reinforcements</div>
+          <div class="shot">Epoxy U-channel with molds</div>
+          <div class="shot">AL6061 waterjetted ribs</div>
+          <div class="shot">Excalibur at race</div>
         </div>
-
-        <div class="project">
-          <h3>Society of Women Engineers</h3>
-          <h6 style="padding-top: 10px;">Startup Spring Officer</h6>
-          <p class="project__description">
-            Led a 5-person team to organize startup events, including high-turnout sessions with Waymo and SkyDeck; streamlined outreach and logistics, boosting student engagement with Bay Area startups.
-          </p>
-          <br> <br>
-           <a href="https://swe.studentorg.berkeley.edu/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>UC Berkeley Solar Vehicle Team, CalSol</h3>
-          <h6 style="padding-top: 10px;">Mechanical Design Engineer + GenXI Occupant Cell Project Lead</h6>
-          <p class="project__description">
-            Designing CalSol's 11th generation solar car, Generation 11, for intercollegiate racing competitions. Designed roll cage and chassis components for optimal safety and lightweight structure, using SolidWorks and ANSYs simulation and CAD software to run FEA for design validation. Modeled vehicle structure deflection in FEA to simulate crumple zones and utilized hand calculations to analyze force-displacement curves and energy absorption metrics.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Project Management</li>
-            <li class="project__stack-item">Finite Element Analysis (FEA)</li>
-            <li class="project__stack-item">Computer-Aided Design (CAD)</li>
-            <li class="project__stack-item">Problem Solving</li>
-            <li class="project__stack-item">Manufacturing</li>
-            <li class="project__stack-item">SOLIDWORKS</li>
-            <li class="project__stack-item">Mechanism Design</li>
-          </ul>
-          <a href="https://docs.google.com/document/d/1qTfm-5JRCIUW4Rc2eF6-FyDFk97jYqlRvjotxRvIbX4/edit?usp=sharing" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-          </div>  
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://econreview.berkeley.edu/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-
-        <div class="project">
-          <h3>iGEM at Berkeley</h3>
-          <h6 style="padding-top: 10px;">NLP Developer</h6>
-          <p class="project__description">
-            Developing CheRMiT cheminformatics pipeline with high accuracy and low false-positive rate.
-          </p>
-          <ul class="project__stack">
-            <li class="project__stack-item">Python</li>
-          </ul>
-        -->
-          <!--
-          <a href="https://github.com" aria-label="source code" class="link link--icon">
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
-          -->
-          <!--
-          <a href="https://www.ocf.berkeley.edu/~igem/" target="_blank" aria-label="live preview" class="link link--icon">
-            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-      -->
+        <div class="tools">Altair, SolidWorks, Topology Optimization, FEA</div>
+        <div class="role">Partner project</div>
       </div>
-    </section>
 
+      <div class="project">
+        <h2>Excalibur Occupant Cell Reinforcements</h2>
+        <div class="meta">2024-2025 &nbsp;|&nbsp; UC Berkeley Solar Vehicle Team</div>
+        <div class="desc">
+          <p>Led the structural redesign of CalSol's solar vehicle occupant cell as the project's Structural Design Lead. Inherited an existing composite structure already integrated into the chassis, and identified critical safety issues through simulation, with localized factors of safety as low as 0.4. Directed a team of five engineers in redesigning the cell to exceed a target minimum FoS of 1.4, balancing safety, weight, and manufacturability.</p>
+          <p>Simulations were conducted using ANSYS Mechanical under 5g load cases at eight critical locations, while composite behavior was modeled using ANSYS Composite PrepPost. The final reinforcement design included AL6061 aluminum ribs for side-impact resistance and a custom epoxy U-channel bonded with 3M DP460 for lightweight structural enhancement. Led material selection efforts and oversaw the full manufacturing process — machining all aluminum components via waterjet and saw cutting, and 3D printing molds for the epoxy parts. Also managed integration planning and coordination with the broader mechanical team.</p>
+        </div>
+        <div class="tools">SolidWorks, Ansys Mechanical, Manufacturing (Waterjet, Molds, 3D Printing)</div>
+      </div>
 
-    <section class="section skills" id="skills">
-      
-      <h2 class="section__title">Skills</h2>
-      <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain">Algorithms (Java, Python)</li>
-        <li class="skills__list-item btn btn--plain">Project Leadership & Cross-functional Collaboration</li>
-        <li class="skills__list-item btn btn--plain">Machine Learning (Python)</li>
-        <li class="skills__list-item btn btn--plain">Data Analytics (MATLAB)</li>
-        <li class="skills__list-item btn btn--plain">Logic Design (Verilog)</li>
-        <li class="skills__list-item btn btn--plain">Embedded Systems (Raspberry Pi)</li>
-        <li class="skills__list-item btn btn--plain">Mechanical CAD & Simulation (SolidWorks, Fusion 360, ANSYS)</li>
-        <li class="skills__list-item btn btn--plain">Scientific Research & Technical Writing</li>
-        <li class="skills__list-item btn btn--plain">Full Stack Development (HTML, CSS)</li>
-        <li class="skills__list-item btn btn--plain">Prototyping & Fabrication (3D Printing, Laser Cutting, Shop Tools)</li>
-      </ul>
-      
-    </section>
-    <section class="section contact center" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <a href="mailto:bhavya_mamnani@berkeley.edu">
-        <span class="btn btn--outline" style="margin-left: calc((100% - 113.5px) / 2); margin-right: calc((100% - 113.5px) / 2);">
-          Email me
-        </span>
-      </a>
-    </section>
-  </main>
+      <div class="project">
+        <h2>catdotcom</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; University of California Berkeley ME100</div>
+        <div class="desc">
+          <p>CATDOTCOM is an automated three-in-one cat toy designed to keep indoor cats active through a sequence of ESP32-controlled components. The system begins with a proximity sensor that triggers audio playback and wirelessly activates a laser module using ESP-NOW. The laser module uses a time-of-flight sensor to detect when the cat catches the laser, then moves it to a new position using two servos. After several successful interactions, a feeder module checks for an existing treat using a load cell and dispenses one if none is detected. All components are monitored and controlled via a live web interface that provides real-time status updates and remote control.</p>
+          <p><a class="link-out" href="https://www.canva.com/design/DAGnYaYVQM8/x6ZACNQFRg9L_9wtLjSklw/view?utm_content=DAGnYaYVQM8&utm_campaign=designshare&utm_medium=link&utm_source=viewer" target="_blank" rel="noopener">"catdotcom" Project Report →</a></p>
+        </div>
+        <div class="shots">
+          <div class="shot">image</div>
+          <div class="shot">Circuit for the feeder component</div>
+          <div class="shot">image</div>
+        </div>
+        <div class="tools">Circuits, Python, SolidWorks, 3D Printing, Soldering</div>
+        <div class="role">Group Project</div>
+      </div>
 
-  <footer class="footer">
-    
-    <a href="/" class="link footer__link">
-      Created By Bhavya Mamnani
-    </a>
-    
-  </footer>
+      <div class="project">
+        <h2>FLUX-1 Motor Mounting</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; SURGE Electric Motorcycles</div>
+        <div class="desc">
+          <p>Contributed to the redesign of a gas-powered Honda motorcycle by developing a custom motor mount for its electric drivetrain. Participated in CAD design and selection of mounting points on the frame. Helped choose 6061 aluminum with lightning holes for weight reduction and added a central steel beam for rigidity. Led the manufacturing process by operating a FabLight laser cutter to fabricate precision aluminum components. Gained hands-on experience in mechanical design, material selection, and fabrication within a collaborative engineering team.</p>
+        </div>
+        <div class="shots">
+          <div class="shot">The bike</div>
+          <div class="shot">Motor mounting CAD prior to lightning holes</div>
+          <div class="shot">Finalized motor mounting</div>
+        </div>
+        <div class="tools">OnShape, Machining (Waterjet, Wood and Aluminum Laser Cut)</div>
+      </div>
 
+      <div class="project">
+        <h2>X-ray Collimator</h2>
+        <div class="meta">2024 - 2025 &nbsp;|&nbsp; FLOW Lab</div>
+        <div class="desc">
+          <p>Led the mechanical design of an X-ray collimator aimed at reducing image scatter, using SolidWorks to develop a precise and functional model. Researched and selected materials for radiation shielding, ultimately choosing lead for its high attenuation efficiency. Designed and assembled a custom control circuit enabling adjustable collimator operation based on project needs. This interdisciplinary project combined mechanical design and basic electronics, involving regular collaboration with lab peers and guidance from Professor Makiharju (PI).</p>
+        </div>
+        <div class="shots">
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
+          <div class="shot">image</div>
+        </div>
+        <div class="tools">Circuits, SolidWorks</div>
+      </div>
 
-  <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
+      <div class="project">
+        <h2>Modular Wheel Attachment</h2>
+        <div class="meta">2025 &nbsp;|&nbsp; University of California Berkeley ENGIN 29</div>
+        <div class="desc">
+          <p>A modular caster wheel with interchangeable top attachments that clamp different chair and furniture legs into place, enabling one wheel to fit multiple leg designs.</p>
+        </div>
+        <div class="tools">SolidWorks, Manufacturing: Tolerances, GD&amp;T, 3D Printing</div>
+        <div class="role">Group Project</div>
+      </div>
+
+      <div class="project">
+        <h2>Dual-Refrigerant Cooling System</h2>
+        <div class="meta">2024 &nbsp;|&nbsp; University of California Berkeley ME40</div>
+        <div class="desc">
+          <p>Designed an environmentally conscious cascade refrigeration system using CO₂ and ammonia to optimize COP and reduce greenhouse impact. Adjusted intermediate temperature to achieve a COP of 5.805 while ensuring ammonia's heat discharge remained below the East Bay's average ambient temperature (14°C), minimizing environmental heat release. Tailored for kimchi storage (0–4°C) with CO₂ maintained at –20°C for safe and efficient food cooling.</p>
+        </div>
+        <div class="shots">
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
+          <div class="shot">image</div><div class="shot">image</div><div class="shot">image</div>
+        </div>
+        <div class="tools">Python</div>
+        <div class="role">Partner Project, Thermodynamics</div>
+      </div>
+
+      <div class="project">
+        <h2>Wind Turbine Blade and Tower</h2>
+        <div class="meta">2024 &nbsp;|&nbsp; University of California Berkeley ENGIN 26</div>
+        <div class="desc">
+          <p>Designed a PLA wind turbine blade optimized for maximum power output and minimal structural deflection. Performed simulation-based analysis to evaluate and refine the blade geometry, targeting the best stiffness-to-weight ratio for efficient energy conversion. Focused on balancing aerodynamic performance with material efficiency through iterative modeling and testing.</p>
+        </div>
+        <div class="tools">SolidWorks, Manufacturing: GD&amp;T, 3D Printing</div>
+        <div class="role">Group Project</div>
+      </div>
+
+      <div class="project">
+        <h2>Misc. Machining</h2>
+        <div class="meta">University of California Berkeley</div>
+        <div class="desc">
+          <p>Manufacturing experience: Waterjet, Laser cut, Power Sanding, Milling, Drill press, 3D printing, Drop saw, Band saw, Scroll Saw, TIG Welding, Lathe.</p>
+        </div>
+      </div>
+
+      </div>
+      <footer class="page-footer">
+        <button class="back-to-top">↑ Back to Top</button>
+        <span>vanessaw@berkeley.edu</span>
+      </footer>
     </div>
-  </div>
-  <script src="./script.js"></script>
-</body>
+  </section>
+
 
 </html>
