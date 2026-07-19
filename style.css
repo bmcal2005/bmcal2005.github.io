@@ -57,8 +57,26 @@ button{ font-family:inherit; }
 .project .desc p:last-child{ margin-bottom:0; }
 .project .tools{ font-size:12.5px; color:var(--gray); margin-top:14px; }
 .project .role{ font-size:12.5px; color:var(--gray); font-style:italic; margin-top:4px; }
-.project .shots{ display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; margin-top:18px; }
-.project .shot{ aspect-ratio:1/1; background:#efefef; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#b3b3b3; font-size:10.5px; text-align:center; padding:6px; }
+.project .shots{ display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:8px; margin-top:18px; }
+.project .shot{ aspect-ratio: var(--aspect, 1/1); background:#efefef; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#b3b3b3; font-size:10.5px; text-align:center; padding:6px; position:relative; overflow:hidden; }
+.project .shot img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* Special layouts depending on number of shots for nicer "puzzle" arrangements */
+.project .shots[data-count="1"]{ grid-template-columns: 1fr; }
+.project .shots[data-count="2"]{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.project .shots[data-count="3"]{ grid-template-columns: 2fr 1fr; grid-auto-rows: 1fr; }
+.project .shots[data-count="3"] .shot:first-child{ grid-row: span 2; }
+.project .shots[data-count="4"]{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+@media (max-width: 720px){
+  .project .shots[data-count="3"]{ grid-template-columns: repeat(2, 1fr); }
+  .project .shots[data-count="3"] .shot:first-child{ grid-row: auto; }
+}
+
+/* Orientation helpers: JS will add these classes and CSS vars */
+.project .shot.landscape{ --aspect: 16/9; }
+.project .shot.portrait{ --aspect: 3/4; }
+.project .shot.square{ --aspect: 1/1; }
 .project .link-out{ display:inline-block; margin-top:10px; font-size:12.5px; text-decoration:underline; }
 
 /* ---------- footer ---------- */
